@@ -1,0 +1,92 @@
+{
+    "name": "ocean",
+    "description": "A clean, minimal theme for the Ghost publishing platform",
+    "demo": "https://fit.knu.edu.ua/blog",
+    "version": "3.1.2",
+    "engines": {
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.jpg"
+    },
+    "scripts": {
+        "dev": "gulp",
+        "zip": "gulp zip",
+        "test": "gscan .",
+        "test:ci": "gscan --fatal --verbose .",
+        "pretest": "gulp build",
+        "preship": "yarn test",
+        "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; else echo \"Uncomitted changes found.\" && exit 1; fi",
+        "postship": "git fetch && gulp release"
+    },
+    "author": {
+        "name": "Ivan Muzyka",
+        "email": "fit@knu.edu.ua",
+        "url": "https://fit.knu.edu.ua"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Magazine"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/musicvano/Ocean.git"
+    },
+    "bugs": "https://github.com/musicvano/Ocean/issues",
+    "contributors": "https://github.com/musicvano/Ocean/graphs/contributors",
+    "devDependencies": {
+        "@tryghost/release-utils": "0.6.9",
+        "autoprefixer": "10.1.0",
+        "beeper": "2.0.0",
+        "cssnano": "4.1.10",
+        "gscan": "3.6.1",
+        "gulp": "4.0.2",
+        "gulp-concat": "2.6.1",
+        "gulp-livereload": "4.0.2",
+        "gulp-postcss": "9.0.0",
+        "gulp-uglify": "3.0.2",
+        "gulp-zip": "5.0.2",
+        "inquirer": "7.3.3",
+        "postcss": "8.2.1",
+        "postcss-color-mod-function": "3.0.3",
+        "postcss-easy-import": "3.0.0",
+        "pump": "3.0.0"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "config": {
+        "posts_per_page": 25,
+        "image_sizes": {
+            "xxs": {
+                "width": 30
+            },
+            "xs": {
+                "width": 100
+            },
+            "s": {
+                "width": 300
+            },
+            "m": {
+                "width": 600
+            },
+            "l": {
+                "width": 1000
+            },
+            "xl": {
+                "width": 2000
+            }
+        }
+    }
+}
