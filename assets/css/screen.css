@@ -163,7 +163,7 @@ body {
     z-index: 10;
     margin: 0 0 0 -2px;
     padding: 0;
-    font-size: 5.0rem;
+    font-size: 4.0rem;
     line-height: 1em;
     font-weight: 600;
 }
@@ -198,14 +198,15 @@ body {
 }
 
 .site-home-header .site-title {
-    font-size: 5.5rem;
+    font-size: 4.0rem;
     text-align: center;
 }
 
 .site-home-header .site-description {
-    font-size: 2.2rem;
-    font-weight: 300;
-    text-align: center;
+    font-size: 3.0rem;
+    font-weight: 400;
+	text-align: center;
+	text-shadow: color-mod(var(--darkgrey)) 2px 2px 15px, color-mod(var(--darkgrey)) -2px 2px 15px, color-mod(var(--darkgrey)) 2px -2px 15px, color-mod(var(--darkgrey)) -2px -2px 15px;
 }
 
 
@@ -250,7 +251,7 @@ body {
 
 @media (max-width: 500px) {
     .site-home-header .site-title {
-        font-size: 4.2rem;
+        font-size: 3.0rem;
     }
 
     .site-home-header .site-description {
@@ -264,7 +265,7 @@ body {
     }
 
     .site-archive-header .site-title {
-        font-size: 4.2rem;
+        font-size: 3.0rem;
         text-align: center;
     }
 
@@ -283,7 +284,7 @@ body {
     right: 0;
     left: 0;
     z-index: 1000;
-    background: color-mod(var(--darkgrey) l(-5%));
+    background: color-mod(var(--darkgrey) l(+15%));
 }
 
 .site-nav {
@@ -293,7 +294,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     overflow: hidden;
-    height: 64px;
+    height: 50px;
     font-size: 1.3rem;
 }
 
@@ -316,7 +317,7 @@ body {
 .site-header-background:not(.responsive-header-img) .site-nav-left-wrapper:after,
 .site-nav-main .site-nav-left-wrapper:after {
     right: 0;
-    background: linear-gradient(to right, color-mod(var(--darkgrey) l(-5%) a(0)) 0%,color-mod(var(--darkgrey) l(-5%)) 100%);
+    background: linear-gradient(to right, color-mod(var(--darkgrey) l(+15%) a(0)) 0%,color-mod(var(--darkgrey) l(+15%)) 100%);
 }
 
 .site-nav-left {
@@ -327,7 +328,7 @@ body {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     margin-right: 10px;
-    padding: 10px 0 80px;
+    padding: 2px 0 80px;
     font-weight: 500;
     letter-spacing: 0.2px;
     text-transform: uppercase;
@@ -354,7 +355,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-shrink: 0;
     display: inline-block;
     margin-right: 32px;
-    padding: 12px 0;
+    padding: 8px 0;
     color: #fff;
     font-size: 1.7rem;
     line-height: 1.8rem;
@@ -370,7 +371,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .site-nav-logo img {
     display: block;
     width: auto;
-    height: 21px;
+    height: 30px;
 }
 
 .site-home-header .site-nav-logo {
@@ -469,7 +470,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     justify-content: flex-end;
     align-items: center;
     padding: 10px 0;
-    height: 64px;
+    height: 45px;
 }
 
 .site-nav-right .nav {
@@ -987,7 +988,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 20px 0 0;
     color: var(--midgrey);
     font-family: Georgia, serif;
-    font-size: 2.3rem;
+    font-size: 2.0rem;
     line-height: 1.4em;
     font-weight: 300;
 }
@@ -1420,7 +1421,7 @@ Usage (In Ghost editor):
 
     .post-full-title {
         margin-top: 0.2em;
-        font-size: 4.2rem;
+        font-size: 2.6rem;
         line-height: 1.05em;
     }
 
@@ -1861,7 +1862,7 @@ Usage (In Ghost editor):
 
 .read-next {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    background: color-mod(var(--darkgrey) l(-5%));
+    background: color-mod(var(--darkgrey) l(+15%));
 }
 
 .read-next-feed {
@@ -1900,7 +1901,7 @@ Usage (In Ghost editor):
 }
 
 .read-next .static-avatar {
-    border-color: #000;
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .read-next .post-card-byline-content {
@@ -1919,7 +1920,7 @@ Usage (In Ghost editor):
     overflow: hidden;
     margin: 0 25px 50px;
     padding: 25px;
-    background: linear-gradient(color-mod(var(--darkgrey) l(+2%)), color-mod(var(--darkgrey) l(-5%)));
+    background: linear-gradient(color-mod(var(--darkgrey) l(+15%)), color-mod(var(--darkgrey) l(+15%)));
     border-radius: 3px;
 }
 
@@ -2826,7 +2827,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
-    background: color-mod(var(--darkgrey) l(-5%));
+    background: color-mod(var(--darkgrey) l(+15%));
 }
 
 .site-footer-content {
