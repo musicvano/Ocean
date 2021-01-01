@@ -2836,7 +2836,7 @@ Usage (In Ghost editor):
     justify-content: space-between;
     align-items: center;
     color: rgba(255,255,255,0.7);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .site-footer-content a {
@@ -3112,4 +3112,19 @@ Usage (In Ghost editor):
     .subscribe-form .success .message-success {
         color: color-mod(var(--green) l(+5%) s(-5%));
     }
+}
+
+.post-full-content .share {
+	display: flex;
+	margin: 30px 0;
+}
+
+.post-full-content .share-item {
+    width: 32px;
+	height: 32px;
+	box-shadow: none; 
+}
+
+.post-full-content .share-item + .share-item {
+    margin-left: 10px;
 }

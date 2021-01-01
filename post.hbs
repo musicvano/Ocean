@@ -107,6 +107,13 @@ into the {body} of the default.hbs template --}}
                 <div class="post-content">
                     {{content}}
                 </div>
+				<div class="share">
+					<a class="share-item" href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}" target="_blank" title="{{t "Share"}} Facebook">{{> "icons/social/facebook"}}</a> 
+					<a class="share-item" href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&text={{encode title}}" target="_blank" title="{{t "Share"}} Twitter">{{> "icons/social/twitter"}}</a>
+					<a class="share-item" href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&title={{encode title}}" target="_blank" title="{{t "Share"}} LinkedIn">{{> "icons/social/linkedin"}}</a>
+					<a class="share-item" href="https://t.me/share/url?url={{url absolute="true"}}&text={{encode title}}" target="_blank" title="{{t "Share"}} Telegram">{{> "icons/social/telegram"}}</a>
+					<a class="share-item" href="viber://forward?text={{url absolute="true"}}" target="_blank" title="{{t "Share"}} Viber">{{> "icons/social/viber"}}</a>
+				</div>
             </section>
 
             {{!-- Email subscribe form at the bottom of the page --}}
