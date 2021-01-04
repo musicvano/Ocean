@@ -30,8 +30,9 @@
             <div class="site-footer-content inner">
                 <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
                 <nav class="site-footer-nav">
-                    <a href="{{@site.url}}">{{t "Blog"}}</a>
+                    {{!--<a href="{{@site.url}}">{{t "Blog"}}</a>--}}
                     {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
+                    <a href="https://www.instagram.com/fit.knu" target="_blank" rel="noopener">Instagram</a>
                     {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
                     <a href="https://www.youtube.com/channel/UCfUZx3D4ezpFiy_Q5IjMBUA" target="_blank" rel="noopener">YouTube</a>
                     <a href="https://t.me/fitknu" target="_blank" rel="noopener">Telegram</a>
@@ -129,6 +130,13 @@
             });
         });
     </script>
+	<script>
+		// Config fslightbox for galleries
+		$('.kg-gallery-image img ').each(function() {
+			$(this).wrap("<a data-no-swup data-fslightbox href='" + this.src + "'/>");
+		});
+	</script>
+	<script src="{{asset "built/fslightbox.js"}}"></script>
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
     {{{block "scripts"}}}

@@ -741,7 +741,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .static-avatar {
     display: block;
     overflow: hidden;
-    margin: 0 0 0 -6px;
+    margin: 0 0 0 -4px;
     width: 34px;
     height: 34px;
     border: #fff 2px solid;
@@ -2059,7 +2059,7 @@ Usage (In Ghost editor):
     .read-next .post-card {
         flex: 1 1 auto;
         margin: 25px;
-        padding: 25px 0 0;
+        padding: 25px 0 5px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
@@ -2854,14 +2854,14 @@ Usage (In Ghost editor):
 
 .site-footer-nav a {
     position: relative;
-    margin-left: 20px;
+    margin-left: 16px;
 }
 
 .site-footer-nav a:before {
     content: "";
     position: absolute;
-    top: 11px;
-    left: -11px;
+    top: 13px;
+    left: -9px;
     display: block;
     width: 2px;
     height: 2px;
@@ -2876,7 +2876,15 @@ Usage (In Ghost editor):
 @media (max-width: 650px) {
     .site-footer-content {
         flex-direction: column;
-    }
+	}
+
+	.site-footer-nav a {
+		margin-left: 11px;
+	}
+	
+	.site-footer-nav a:before {
+		left: -6px;
+	}
 
     .site-footer-nav a:first-child {
         margin-left: 0;
