@@ -1,10 +1,10 @@
 # Ocean
 
-This theme is used for [Ghost](http://github.com/tryghost/ghost/) blog engine. Ocean theme is based on the latest release of default theme - [Casper](https://github.com/TryGhost/Casper/releases) page.
+This theme is used for [Ghost](http://github.com/tryghost/ghost/) blog engine. Ocean theme is based on the latest release of default theme - [Casper](https://github.com/TryGhost/Casper/releases).
 
 &nbsp;
 
-![screenshot-desktop](https://user-images.githubusercontent.com/353959/66987533-40eae100-f0c1-11e9-822e-cbaf38fb8e3f.png)
+![screenshot-desktop](assets/screenshot-desktop.jpg)
 
 &nbsp;
 
@@ -66,4 +66,4 @@ You can add your own SVG icons in the same manner.
 
 # Copyright & License
 
-Copyright (c) 2013-2020 Ghost Foundation - Released under the [MIT license](LICENSE).
+Copyright (c) 2013-2021 Ghost Foundation - Released under the [MIT license](LICENSE).
