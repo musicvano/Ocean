@@ -6,8 +6,6 @@ This theme is used for [Ghost](http://github.com/tryghost/ghost/) blog engine. O
 
 ![screenshot-desktop](assets/screenshot-desktop.jpg)
 
-&nbsp;
-
 # First time using a Ghost theme?
 
 Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
